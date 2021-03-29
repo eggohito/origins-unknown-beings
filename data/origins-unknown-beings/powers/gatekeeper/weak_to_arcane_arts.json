@@ -1,0 +1,29 @@
+{
+    "name": "Weak to Arcane Arts",
+    "description": "test",
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:instant_damage",
+            "duration": 1,
+            "amplifier": 1,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:command",
+            "command": "execute if entity @s[predicate=origins-unknown-beings:held_items_properties/enchanted]",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    }
+}

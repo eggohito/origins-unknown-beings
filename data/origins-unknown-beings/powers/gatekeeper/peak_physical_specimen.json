@@ -1,0 +1,60 @@
+{
+    "name": "Peak Physical Specimen",
+    "description": "You were made by existence itself, made to kill Warpers and those who mess with the timeline. You have strength 1, jump boost 2, and do 3 extra damage to Timekeepers, Timeshifters, Warpers, and Enderians.",
+    "type": "origins:multiple",
+    "status_effects": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 2,
+        "duration_per_stack": 10,
+        "effects": [
+            {
+                "effect": "minecraft:strength",
+                "amplifier": 0,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:jump_boost",
+                "amplifier": 1,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    },
+    "extra_damage_to": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 3.0
+        },
+        "target_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:player"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:origin",
+                            "origin": "origins:enderian"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "timeorigin:timeshifter"
+                        },
+                        {
+                            "type": "origins:origin",
+                            "origin": "origins-unknown-beings:warper"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

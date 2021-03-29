@@ -9,7 +9,7 @@ Idea by `Eric Smart#9785` in the Origins discord
 <ul>
 <details>
 <summary>
-<b>Gatekeeper (W.I.P)</b>
+<b>Gatekeeper</b>
 </summary>
 The gatekeepers are mystical beings created by the universe to correct the timeline.
 <br>

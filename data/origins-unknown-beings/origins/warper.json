@@ -1,0 +1,10 @@
+{
+    "icon": "minecraft:ender_pearl",
+    "impact": 3,
+    "order": 5,
+    "powers": [
+        
+    ],
+    "name": "Warper",
+    "description": "An alien race that have evolved over the millenia to displace their particles and reform them in another location."
+}
