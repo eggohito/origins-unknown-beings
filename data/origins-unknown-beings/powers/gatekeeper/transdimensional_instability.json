@@ -8,18 +8,13 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "execute at @s run summon tnt"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scoreboard players set @s o-u-b.deaths 0"
+                "command": "summon tnt"
             }
         ]
     },
     "condition": {
-        "type": "origins:command",
-        "command": "execute if score @s o-u-b.deaths matches 1..",
+        "type": "origins:relative_health",
         "comparison": "==",
-        "compare_to": 1
+        "compare_to": 0
     }
 }

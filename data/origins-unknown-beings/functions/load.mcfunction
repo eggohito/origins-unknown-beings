@@ -12,8 +12,6 @@ gamerule commandBlockOutput false
 # Add scoreboard objective(s)
 scoreboard objectives add o-u-b.main dummy
 
-scoreboard objectives add o-u-b.deaths deathCount
-
 
 # Load message
 tellraw @a[tag = o-u-b.debug] {"text": "[+ Loaded \"Unknown Beings (Origins)\"]", "color": "green", "italic": false, "hoverEvent": {"action": "show_text", "contents": {"text": "v1.0.0"}}}
