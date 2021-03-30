@@ -5,10 +5,12 @@
 #@within tag/function minecraft:load
 
 
+# Set gamerule(s)
+gamerule commandBlockOutput false
+
+
 # Add scoreboard objective(s)
 scoreboard objectives add o-u-b.main dummy
-
-scoreboard objectives add o-u-b.deaths deathCount
 
 
 # Load message

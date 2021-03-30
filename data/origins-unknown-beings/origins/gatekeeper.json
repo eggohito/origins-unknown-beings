@@ -1,0 +1,15 @@
+{
+    "icon": "minecraft:end_stone",
+    "impact": 3,
+    "order": 6,
+    "powers": [
+        "origins-unknown-beings:gatekeeper/celestial_adaptation",
+        "origins-unknown-beings:gatekeeper/galactic_favoritism",
+        "origins-unknown-beings:gatekeeper/peak_physical_specimen",
+        "origins-unknown-beings:gatekeeper/transdimensional_gateway",
+        "origins-unknown-beings:gatekeeper/transdimensional_instability",
+        "origins-unknown-beings:gatekeeper/weak_to_arcane_arts"
+    ],
+    "name": "Gatekeeper",
+    "description": "The gatekeepers are mystical beings created by the universe to correct the timeline."
+}

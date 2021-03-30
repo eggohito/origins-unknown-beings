@@ -1,0 +1,28 @@
+{
+    "name": "Weak to Arcane Arts",
+    "description": "Your celestial body is much easier to damage with any sort of enchanted weaponry, not only doing extra damage to you, but also ignoring your armor.",
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 8,
+        "source": {
+            "name": "magic",
+            "bypasses_armor": true,
+            "unblockable": true,
+            "magic": true
+        }
+    },
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:command",
+            "command": "execute if entity @s[predicate=origins-unknown-beings:held_items_properties/enchanted]",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    }
+}

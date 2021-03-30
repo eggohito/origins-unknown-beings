@@ -1,0 +1,20 @@
+{
+    "name": "Transdimensional Instability",
+    "description": "All of your interdimensional travel has made your very being unstable. When you die, you explode, hurting all nearby entities and making your items cease to exist.",
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "rising_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "summon tnt"
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:relative_health",
+        "comparison": "==",
+        "compare_to": 0
+    }
+}

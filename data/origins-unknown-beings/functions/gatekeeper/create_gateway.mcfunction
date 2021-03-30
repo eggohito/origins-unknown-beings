@@ -1,4 +1,4 @@
-#> origins-unknown-beings:gatekeeper/gateway/spawn_cloud
+#> origins-unknown-beings:gatekeeper/create_gateway
 #
 #   > Spawns the gateway marker entity
 #
@@ -22,4 +22,19 @@ tag @s add o-u-b.gatekeeper.gateway_exclude
 
 
 # Remove the items from the hands
-replaceitem entity @s[predicate = origins-unknown-beings:held_items_properties] weapon air
+    ## Clear the ender pearl in the mainhand
+    replaceitem entity @s weapon.mainhand air
+
+
+    # Remove one item from the offhand
+    function phi.modifyinv:setup/offhand
+
+    execute store result score #count o-u-b.main run data get storage phi.modifyinv:temp offhand[0].Count
+
+    scoreboard players remove #count o-u-b.main 1
+
+    execute store result storage phi.modifyinv:temp offhand[0].Count byte 1 run scoreboard players get #count o-u-b.main
+
+    function phi.modifyinv:load/offhand
+
+    function phi.modifyinv:apply/offhand 

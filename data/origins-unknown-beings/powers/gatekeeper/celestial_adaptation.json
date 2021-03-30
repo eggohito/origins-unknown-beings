@@ -1,0 +1,56 @@
+{
+    "name": "Celestial Adaptation",
+    "description": "In The End, you have slow falling. And in The Nether, you have fire resistance, while in the Overworld, you have resistance.",
+    "type": "origins:multiple",
+    "overworld": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 2,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:resistance",
+            "amplifier": 0,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": true
+        },
+        "condition": {
+            "type": "origins:predicate",
+            "predicate": "origins-unknown-beings:dimension/overworld"
+        }
+    },
+    "the_nether": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 2,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:fire_resistance",
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": true,
+            "show_icon": true
+        },
+        "condition": {
+            "type": "origins:predicate",
+            "predicate": "origins-unknown-beings:dimension/the_nether"
+        }
+    },
+    "the_end": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 2,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:slow_falling",
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": true,
+            "show_icon": true
+        },
+        "condition": {
+            "type": "origins:predicate",
+            "predicate": "origins-unknown-beings:dimension/the_end"
+        }
+    }
+}

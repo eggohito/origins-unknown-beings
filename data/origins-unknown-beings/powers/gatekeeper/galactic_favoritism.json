@@ -1,0 +1,42 @@
+{
+    "name": "Galactic Favoritism",
+    "description": "Due to your creators making you in order to correct the timeline, time affects you much less sparingly than it affects others. Your hunger declines faster, and your natural regeneration is slower.",
+    "type": "origins:multiple",
+    "disable_natural_regen": {
+        "type": "origins:disable_regen"
+    },
+    "slow_regen": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:regeneration",
+                "duration": 20,
+                "amplifier": 2,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<",
+            "compare_to": 6,
+            "inverted": true
+        },
+        "interval": 140
+    },
+    "famished": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 2,
+        "duration_per_stack": 40,
+        "effect": {
+            "effect": "minecraft:hunger",
+            "amplifier": 9,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false
+        }
+    }
+}

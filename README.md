@@ -2,14 +2,12 @@
 A datapack that adds the Gatekeeper, Scattered Ones, and Warper origins. 
 <br/>
 <br/>
-Idea by `Eric Smart#9785` in the Origins discord
-<br/>
 
 ## Origins:
 <ul>
 <details>
 <summary>
-<b>Gatekeeper (W.I.P)</b>
+<b>Gatekeeper</b>
 </summary>
 The gatekeepers are mystical beings created by the universe to correct the timeline.
 <br>
@@ -26,7 +24,7 @@ In The End, you have slow falling. And in The Nether, you have fire resistance, 
 
 
 + Peak Physical Specimen
-You were made by existence itself, made to kill Warpers and those who mess with the timeline. You have strength 1, jump boost 2, and do 3 extra damage to Timekeepers, Timeshifters, Warpers, and Enderians. (if the respective datapacks are installed)
+You were made by existence itself, made to kill Warpers and those who mess with the timeline. You have strength 1, jump boost 2, and do 3 extra damage to Timeshifters, Warpers, and Enderians. (if the respective datapacks are installed)
 
 
 ! Transdimensional Instability
@@ -135,3 +133,9 @@ Your particles will set on fire if you teleport while in (or into) sunlight.
 
 </details>
 </ul>
+
+<br/>
+
+## Credits:
+* `Eric Smart#9785` - for the ideas
+* MinecraftPhi - for the `phi.modifyinv` module
