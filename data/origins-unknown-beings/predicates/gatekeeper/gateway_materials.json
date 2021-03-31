@@ -3,15 +3,15 @@
     "terms": [
         {
             "condition": "minecraft:reference",
-            "name": "origins-unknown-beings:held_items_properties/overworld"
+            "name": "origins-unknown-beings:gatekeeper/held_items_properties/overworld"
         },
         {
             "condition": "minecraft:reference",
-            "name": "origins-unknown-beings:held_items_properties/the_nether"
+            "name": "origins-unknown-beings:gatekeeper/held_items_properties/the_nether"
         },
         {
             "condition": "minecraft:reference",
-            "name": "origins-unknown-beings:held_items_properties/the_end"
+            "name": "origins-unknown-beings:gatekeeper/held_items_properties/the_end"
         }
     ]
 }

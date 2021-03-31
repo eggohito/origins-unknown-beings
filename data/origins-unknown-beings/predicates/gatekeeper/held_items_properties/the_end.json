@@ -3,7 +3,7 @@
         "condition": "minecraft:inverted",
         "term": {
             "condition": "minecraft:reference",
-            "name": "origins-unknown-beings:dimension/overworld"
+            "name": "origins-unknown-beings:dimension/the_end"
         }
     },
     {
@@ -27,7 +27,7 @@
         "predicate": {
             "equipment": {
                 "offhand": {
-                    "tag": "origins-unknown-beings:overworld_blocks"
+                    "tag": "origins-unknown-beings:gatekeeper/the_end_blocks"
                 }
             }
         }

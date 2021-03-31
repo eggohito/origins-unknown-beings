@@ -1,0 +1,6 @@
+{
+    "name": "Unknown Upbringing",
+    "description": "Your curiousity about your past makes it impossible for you to sleep.",
+    "type": "origins:prevent_sleep",
+    "message": "Your curiousity about your past makes it impossible for you to sleep."
+}

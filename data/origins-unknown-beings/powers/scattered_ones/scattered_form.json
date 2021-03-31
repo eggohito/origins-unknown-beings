@@ -1,0 +1,58 @@
+{
+    "name": "Scattered Form",
+    "description": "Your default form is just a small cloud of purple particles.",
+    "type": "origins:multiple",
+    "disabled": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "transparency": {
+        "type": "origins:model_color",
+        "alpha": 0.05,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "origins-unknown-beings:scattered_ones/scattered_form_disabled",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "particle": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle dust 0.45 0 0.7 2 ~ ~0.5 ~ 0.3 0.5 0.3 0.001 16 normal @a"
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "particle dust 0.45 0 0.7 2 ~ ~0.5 ~ 0.3 0.5 0.3 0.001 16 normal @a"
+                    },
+                    "ticks": 1
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "particle dust 0.45 0 0.7 2 ~ ~0.5 ~ 0.3 0.5 0.3 0.001 16 normal @a"
+                    },
+                    "ticks": 1
+                }
+            ]
+        },
+        "interval": 4,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "origins-unknown-beings:scattered_ones/scattered_form_disabled",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    }
+}
