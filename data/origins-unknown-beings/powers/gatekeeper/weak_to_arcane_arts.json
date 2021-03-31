@@ -16,7 +16,7 @@
         "type": "origins:attacker",
         "entity_condition": {
             "type": "origins:command",
-            "command": "execute if entity @s[predicate=origins-unknown-beings:held_items_properties/enchanted]",
+            "command": "execute if entity @s[predicate=origins-unknown-beings:gatekeeper/held_items_properties/enchanted]",
             "comparison": "==",
             "compare_to": 1
         }
