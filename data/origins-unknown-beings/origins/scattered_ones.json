@@ -3,7 +3,14 @@
     "impact": 3,
     "order": 7,
     "powers": [
-
+        "origins-unknown-beings:scattered_ones/knowledge_of_the_dark_arts",
+        "origins-unknown-beings:scattered_ones/lightweight",
+        "origins-unknown-beings:scattered_ones/particle_condensing",
+        "origins-unknown-beings:scattered_ones/physical_instability",
+        "origins-unknown-beings:scattered_ones/scattered_form",
+        "origins-unknown-beings:scattered_ones/suffocation",
+        "origins-unknown-beings:scattered_ones/unknown_upbringing",
+        "origins-unknown-beings:scattered_ones/void_dissolution"
     ],
     "name": "Scattered Ones",
     "description": "The Scattered Ones are beings of unknown origin, they are clouds of purple particles, their very atoms in cluster, acting as pocket realms where they store their items."

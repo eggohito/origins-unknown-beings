@@ -1,0 +1,34 @@
+{
+    "name": "Knowledge of the Dark Arts",
+    "description": "Your mysterious knowledge of the dark arts makes all cursed items much more efficient to you.",
+    "type": "origins:multiple",
+    "more_damage": {
+        "type": "origins:modify_damage_dealt",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:command",
+                "command": "execute if entity @s[predicate = origins-unknown-beings:scattered_ones/cursed_weapon-like]",
+                "comparison": "==",
+                "compare_to": 1
+            }
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": 2
+        }
+    },
+    "fast_mining_speed": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.2
+        },
+        "condition": {
+            "type": "origins:command",
+            "command": "execute if entity @s[predicate = origins-unknown-beings:scattered_ones/cursed_tool-like]",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    }
+}
