@@ -1,6 +1,6 @@
 {
     "name": "Peak Physical Specimen",
-    "description": "You were made by existence itself, made to kill Warpers and those who mess with the timeline. You have strength 1, jump boost 2, and do 3 extra damage to Timekeepers, Timeshifters, Warpers, and Enderians.",
+    "description": "You were made by existence itself, made to kill Warpers and those who mess with the timeline. You have strength 1, jump boost 2, and do 3 extra damage to Timeshifters, Warpers, and Enderians.",
     "type": "origins:multiple",
     "status_effects": {
         "type": "origins:stacking_status_effect",
