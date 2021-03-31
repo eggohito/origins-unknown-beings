@@ -4,6 +4,7 @@
         "phi.core:internal/load",
         "#phi.core:full_load",
         
+        "mrcd:private/init",
         "origins-unknown-beings:load"
     ]
 }
