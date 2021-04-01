@@ -138,4 +138,5 @@ Your particles will set on fire if you teleport while in (or into) sunlight.
 
 ## Credits:
 * `Eric Smart#9785` - for the ideas
-* MinecraftPhi - for the `phi.modifyinv` module
+* [K-Bai](https://github.com/K-Bai) - for the [`MRCD`](https://github.com/K-bai/Minecraft-Ray-Collision-Detector) module
+* [MinecraftPhi](https://github.com/MinecraftPhi) - for the [`phi.modifyinv`](https://github.com/MinecraftPhi/MinecraftPhi-modules/tree/master/phi.modifyinv/src/datapack) module
