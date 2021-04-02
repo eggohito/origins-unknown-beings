@@ -1,0 +1,23 @@
+[
+    {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+            "block": {
+                "tag": "origins-unknown-beings:player_can_pass"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:location_check",
+            "offsetY": -2,
+            "predicate": {
+                "block": {
+                    "tag": "origins-unknown-beings:player_can_pass"
+                }
+            }
+        }
+    }
+]

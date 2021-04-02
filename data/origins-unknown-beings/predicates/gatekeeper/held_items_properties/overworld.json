@@ -27,7 +27,7 @@
         "predicate": {
             "equipment": {
                 "offhand": {
-                    "tag": "origins-unknown-beings:gatekeeper/overworld_blocks"
+                    "tag": "origins-unknown-beings:dimension/blocks/overworld"
                 }
             }
         }

@@ -1,0 +1,61 @@
+{
+    "name": "Photosensitive Particles",
+    "description": "Your particles will set on fire if you teleport while in (or into) sunlight.",
+    "type": "origins:multiple",
+    "burn": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:set_on_fire",
+            "duration": 5
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[tag = o-u-b.warper.has_relocated]",
+                    "comparison": "==",
+                    "compare_to": "1"
+                },
+                {
+                    "type": "origins:exposed_to_sun"
+                }
+            ]
+        }
+    },
+    "add_displacement": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:change_resource",
+            "resource": "origins-unknown-beings:warper/displacement_bar",
+            "change": 5
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[tag = o-u-b.warper.has_relocated]",
+                    "comparison": "==",
+                    "compare_to": "1"
+                }
+            ]
+        }
+    },
+    "remove_tag": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s remove o-u-b.warper.has_relocated"
+        },
+        "condition": {
+            "type": "origins:command",
+            "command": "execute if entity @s[tag = o-u-b.warper.has_relocated]",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    }
+}

@@ -3,7 +3,13 @@
     "impact": 3,
     "order": 5,
     "powers": [
-        
+        "origins-unknown-beings:warper/displacement",
+        "origins-unknown-beings:warper/mysterious_evolution",
+        "origins-unknown-beings:warper/particle_acceleration",
+        "origins-unknown-beings:warper/particle_relocation",
+        "origins-unknown-beings:warper/photosensitive_particles",
+        "origins-unknown-beings:warper/tradeoff",
+        "origins-unknown-beings:warper/transdimensional_relocation"
     ],
     "name": "Warper",
     "description": "An alien race that have evolved over the millenia to displace their particles and reform them in another location."

@@ -1,0 +1,8 @@
+{
+    "name": "Mysterious Evolution",
+    "description": "Your skin is tinted blue-ish purple.",
+    "type": "origins:model_color",
+    "red": 0.4,
+    "green": 0.0,
+    "blue": 1.0
+}
