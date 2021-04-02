@@ -90,7 +90,7 @@ Your curiosity about your past makes it impossible for you to sleep
 <ul>
 <details>
 <summary>
-<b>Warper (W.I.P)</b>
+<b>Warper</b>
 </summary>
 Warpers are an alien race that have evolved over the millenia to displace their particles and reform them in another location.
 <br>
