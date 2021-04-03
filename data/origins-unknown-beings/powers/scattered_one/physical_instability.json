@@ -29,7 +29,7 @@
             "amplifier": 1,
             "is_ambient": false,
             "show_particles": false,
-            "show_icon": true
+            "show_icon": false
         },
         "condition": {
             "type": "origins:and",
