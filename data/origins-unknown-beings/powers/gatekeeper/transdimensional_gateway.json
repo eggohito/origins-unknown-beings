@@ -1,6 +1,6 @@
 {
     "name": "Transdimensional Gateway",
-    "description": "At a cost of 5 hearts, 16 ender pearls in your mainhand, and a block in your offhand, you summon a temporary cloud of particles that will teleport anyone who enters into the dimension the held block belongs in.",
+    "description": "At a cost of 5 hearts, 16 ender pearls in your offhand, and a block in your mainhand, you summon a temporary cloud of particles that will teleport anyone who enters into the dimension the held block belongs in.",
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:and",
