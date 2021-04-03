@@ -36,7 +36,7 @@
                 },
                 {
                     "type": "origins:command",
-                    "command": "execute if entity @s[predicate = origins-unknown-beings:warper/td_reloc_requirements]",
+                    "command": "execute if entity @s[predicate = origins-unknown-beings:entity_properties/equipment/mainhand/td_reloc_requirements]",
                     "comparison": "==",
                     "compare_to": 1
                 },

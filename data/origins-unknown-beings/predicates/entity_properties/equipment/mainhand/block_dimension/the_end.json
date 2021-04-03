@@ -1,0 +1,20 @@
+[
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:reference",
+            "name": "origins-unknown-beings:location_check/dimension/the_end"
+        }
+    },
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "tag": "origins-unknown-beings:dimension/blocks/the_end"
+                }
+            }
+        }
+    }
+]

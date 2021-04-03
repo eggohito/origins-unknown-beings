@@ -1,6 +1,6 @@
 #> origins-unknown-beings:warper/transdimensional_relocation/setup_destination
 #
-#
+#   > Setup the destination point
 #
 #@within function origins-unknown-beings:warper/transdimensional_relocation/prepare
 

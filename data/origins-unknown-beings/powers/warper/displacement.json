@@ -52,5 +52,13 @@
             "comparison": ">=",
             "compare_to": 20
         }
+    },
+    "respawn": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "origins-unknown-beings:warper/displacement_bar",
+            "change": -69420
+        }
     }
 }

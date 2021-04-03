@@ -1,6 +1,6 @@
 #> origins-unknown-beings:warper/transdimensional_relocation/prepare
 #
-#
+#   > Prepare the destination entity
 #
 #@internal
 

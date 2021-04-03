@@ -1,4 +1,7 @@
 #> origins-unknown-beings:warper/transdimensional_relocation/get_requirements
+#
+#   > Clear 1 item from the player's mainhand
+#
 #@within function origins-unknown-beings:warper/transdimensional_relocation/teleport_target
 
 

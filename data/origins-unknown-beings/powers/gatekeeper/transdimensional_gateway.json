@@ -39,7 +39,7 @@
             },
             {
                 "type": "origins:command",
-                "command": "execute if entity @s[predicate=origins-unknown-beings:gatekeeper/gateway_materials]",
+                "command": "execute if entity @s[predicate=origins-unknown-beings:entity_properties/equipment/hands/gateway_materials]",
                 "comparison": "==",
                 "compare_to": 1
             }

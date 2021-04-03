@@ -1,0 +1,9 @@
+{
+    "values": [
+        "minecraft:lava",
+        "minecraft:magma_block",
+        "minecraft:sweet_berry_bush",
+        "#minecraft:campfires",
+        "#minecraft:fire"
+    ]
+}

@@ -28,7 +28,7 @@ tellraw @a[tag = o-u-b.debug] {"text": "[+ Loaded \"Unknown Beings (Origins)\"]"
 # Set variables/constants
 execute unless score #load o-u-b.main = #load o-u-b.main run function origins-unknown-beings:.cfg/warper
 
-function origins-unknown-beings:warper/relocation/distance/calculate_max
+function origins-unknown-beings:warper/particle_relocation/distance/calculate_max
 
 scoreboard players set #load o-u-b.main 1
 

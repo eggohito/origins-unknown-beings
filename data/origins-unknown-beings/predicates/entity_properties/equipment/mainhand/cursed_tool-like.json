@@ -1,0 +1,37 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "tag": "origins-unknown-beings:scattered_one/tool-like",
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:binding_curse"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "tag": "origins-unknown-beings:scattered_one/tool-like",
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:vanishing_curse"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

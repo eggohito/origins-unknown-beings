@@ -1,6 +1,6 @@
 #> origins-unknown-beings:warper/transdimensional_relocation/teleport_target
 #
-#
+#   > Teleport the Warper transdimensionally
 #
 #@within function origins-unknown-beings:warper/transdimensional_relocation/setup_destination
 
