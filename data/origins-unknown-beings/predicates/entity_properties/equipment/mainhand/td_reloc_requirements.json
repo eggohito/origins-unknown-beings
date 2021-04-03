@@ -3,15 +3,15 @@
     "terms": [
         {
             "condition": "minecraft:reference",
-            "name": "origins-unknown-beings:warper/held_items_properties/overworld"
+            "name": "origins-unknown-beings:entity_properties/equipment/mainhand/block_dimension/overworld"
         },
         {
             "condition": "minecraft:reference",
-            "name": "origins-unknown-beings:warper/held_items_properties/the_nether"
+            "name": "origins-unknown-beings:entity_properties/equipment/mainhand/block_dimension/the_nether"
         },
         {
             "condition": "minecraft:reference",
-            "name": "origins-unknown-beings:warper/held_items_properties/the_end"
+            "name": "origins-unknown-beings:entity_properties/equipment/mainhand/block_dimension/the_end"
         }
     ]
 }

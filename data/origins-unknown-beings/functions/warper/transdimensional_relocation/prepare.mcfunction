@@ -11,11 +11,11 @@ tag @s add o-u-b.warper.td_reloc_target
 
 # Check if the player has met certain conditions
     ## (Default dimensions)
-    execute if predicate origins-unknown-beings:warper/held_items_properties/overworld run summon area_effect_cloud ~ ~ ~ {Tags: ["o-u-b.warper.td_reloc.destination", "o-u-b.warper.td_reloc.destination.overworld"]}
+    execute if predicate origins-unknown-beings:entity_properties/equipment/mainhand/block_dimension/overworld run summon area_effect_cloud ~ ~ ~ {Tags: ["o-u-b.warper.td_reloc.destination", "o-u-b.warper.td_reloc.destination.overworld"]}
 
-    execute if predicate origins-unknown-beings:warper/held_items_properties/the_nether run summon area_effect_cloud ~ ~ ~ {Tags: ["o-u-b.warper.td_reloc.destination", "o-u-b.warper.td_reloc.destination.the_nether"]}
+    execute if predicate origins-unknown-beings:entity_properties/equipment/mainhand/block_dimension/the_nether run summon area_effect_cloud ~ ~ ~ {Tags: ["o-u-b.warper.td_reloc.destination", "o-u-b.warper.td_reloc.destination.the_nether"]}
 
-    execute if predicate origins-unknown-beings:warper/held_items_properties/the_end run summon area_effect_cloud ~ ~ ~ {Tags: ["o-u-b.warper.td_reloc.destination", "o-u-b.warper.td_reloc.destination.the_end"]}
+    execute if predicate origins-unknown-beings:entity_properties/equipment/mainhand/block_dimension/the_end run summon area_effect_cloud ~ ~ ~ {Tags: ["o-u-b.warper.td_reloc.destination", "o-u-b.warper.td_reloc.destination.the_end"]}
 
 
     ## (Custom dimensions) [currently unused]

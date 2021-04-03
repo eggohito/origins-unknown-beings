@@ -7,8 +7,13 @@
         "type": "origins:and",
         "actions": [
             {
+                "type": "origins:change_resource",
+                "resource": "origins-unknown-beings:warper/displacement_bar",
+                "change": 10
+            },
+            {
                 "type": "origins:damage",
-                "amount": 5.0,
+                "amount": 10.0,
                 "source": {
                     "name": "magic",
                     "bypasses_armor": true,

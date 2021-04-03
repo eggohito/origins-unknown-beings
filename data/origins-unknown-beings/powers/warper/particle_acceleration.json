@@ -45,22 +45,19 @@
         },
         "cooldown": 20,
         "hud_render": {
-            "should_render": true
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 9
         },
         "key": {
             "key": "key.origins.secondary_active",
             "continuous": false
         },
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:resource",
-                    "resource": "origins-unknown-beings:warper/displacement_bar",
-                    "comparison": "<",
-                    "compare_to": 20
-                }
-            ]
+            "type": "origins:resource",
+            "resource": "origins-unknown-beings:warper/displacement_bar",
+            "comparison": "<",
+            "compare_to": 20
         }
     },
     "collide": {
@@ -88,15 +85,10 @@
         },
         "interval": 1,
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:command",
-                    "command": "execute if entity @s[tag = o-u-b.warper.particle_accelerating]",
-                    "comparison": "==",
-                    "compare_to": 1
-                }
-            ]
+            "type": "origins:command",
+            "command": "execute if entity @s[tag = o-u-b.warper.particle_accelerating]",
+            "comparison": "==",
+            "compare_to": 1
         }
     }
 }

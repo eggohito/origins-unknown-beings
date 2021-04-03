@@ -7,7 +7,7 @@
             "predicate": {
                 "equipment": {
                     "mainhand": {
-                        "tag": "origins-unknown-beings:scattered_one/tool-like",
+                        "tag": "origins-unknown-beings:tool-like",
                         "enchantments": [
                             {
                                 "enchantment": "minecraft:binding_curse"
@@ -23,7 +23,7 @@
             "predicate": {
                 "equipment": {
                     "mainhand": {
-                        "tag": "origins-unknown-beings:scattered_one/tool-like",
+                        "tag": "origins-unknown-beings:tool-like",
                         "enchantments": [
                             {
                                 "enchantment": "minecraft:vanishing_curse"
