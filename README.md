@@ -16,7 +16,7 @@ The gatekeepers are mystical beings created by the universe to correct the timel
 
 ```diff
 + Transdimensional Gateway
-At a cost of 5 hearts, 16 ender pearls in your mainhand, and a block in your offhand, you summon a temporary cloud of particles that will teleport anyone who enters into the dimension the held block belongs to.
+At a cost of 5 hearts, 16 ender pearls in your offhand, and a block in your mainhand, you summon a temporary cloud of particles that will teleport anyone who enters into the dimension the held block belongs to.
 
 
 + Celestial Adaptation
@@ -110,7 +110,6 @@ This fills an eighth of your displacement bar.
 
 + Transdimensional Relocation
 If you press the primary ability key while holding a block, you teleport to the respective dimension of the block, relative to your position.
-This ability temporarily gives you resistance and slow falling to avoid the dangers of relocating.
 This fills half of your displacement bar
 
 
