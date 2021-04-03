@@ -44,7 +44,7 @@ Your celestial body is much easier to damage with any sort of enchanted weaponry
 <ul>
 <details>
 <summary>
-<b>Scattered Ones</b>
+<b>Scattered One</b>
 </summary>
 The Scattered Ones are beings of unknown origin. They are a cloud of purple particles, their very atoms in cluster, acting as pocket realms where they store their items.
 <br>
