@@ -16,7 +16,7 @@ The gatekeepers are mystical beings created by the universe to correct the timel
 
 ```diff
 + Transdimensional Gateway
-At a cost of 5 hearts, 16 ender pearls in your mainhand, and a block in your offhand, you summon a temporary cloud of particles that will teleport anyone who enters into the dimension the held block belongs to.
+At a cost of 5 hearts, 16 ender pearls in your offhand, and a block in your mainhand, you summon a temporary cloud of particles that will teleport anyone who enters into the dimension the held block belongs to.
 
 
 + Celestial Adaptation
@@ -44,7 +44,7 @@ Your celestial body is much easier to damage with any sort of enchanted weaponry
 <ul>
 <details>
 <summary>
-<b>Scattered Ones</b>
+<b>Scattered One</b>
 </summary>
 The Scattered Ones are beings of unknown origin. They are a cloud of purple particles, their very atoms in cluster, acting as pocket realms where they store their items.
 <br>
