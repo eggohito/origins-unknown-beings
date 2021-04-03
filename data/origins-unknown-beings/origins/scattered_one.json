@@ -3,6 +3,7 @@
     "impact": 3,
     "order": 7,
     "powers": [
+        "origins-unknown-beings:scattered_one/form_toggle",
         "origins-unknown-beings:scattered_one/knowledge_of_the_dark_arts",
         "origins-unknown-beings:scattered_one/lightweight",
         "origins-unknown-beings:scattered_one/particle_condensing",

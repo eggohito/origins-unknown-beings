@@ -23,10 +23,10 @@
         "type": "origins:stacking_status_effect",
         "min_stacks": 1,
         "max_stacks": 2,
-        "duration_per_stack": 40,
+        "duration_per_stack": 10,
         "effect": {
             "effect": "minecraft:wither",
-            "amplifier": 1,
+            "amplifier": 0,
             "is_ambient": false,
             "show_particles": false,
             "show_icon": false
@@ -36,7 +36,7 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "origins-unknown-beings:scattered_one/scattered_form_disabled",
+                    "resource": "origins-unknown-beings:scattered_one/form_toggle",
                     "comparison": "==",
                     "compare_to": 1
                 },
@@ -63,7 +63,7 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "origins-unknown-beings:scattered_one/scattered_form_disabled",
+                    "resource": "origins-unknown-beings:scattered_one/form_toggle",
                     "comparison": "==",
                     "compare_to": 1
                 },
@@ -89,7 +89,7 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "origins-unknown-beings:scattered_one/scattered_form_disabled",
+                    "resource": "origins-unknown-beings:scattered_one/form_toggle",
                     "comparison": "==",
                     "compare_to": 0
                 },

@@ -6,18 +6,18 @@
         "type": "origins:if_else",
         "condition": {
             "type": "origins:resource",
-            "resource": "origins-unknown-beings:scattered_one/scattered_form_disabled",
+            "resource": "origins-unknown-beings:scattered_one/form_toggle",
             "comparison": "==",
             "compare_to": 1
         },
         "if_action": {
             "type": "origins:change_resource",
-            "resource": "origins-unknown-beings:scattered_one/scattered_form_disabled",
+            "resource": "origins-unknown-beings:scattered_one/form_toggle",
             "change": -69420
         },
         "else_action": {
             "type": "origins:change_resource",
-            "resource": "origins-unknown-beings:scattered_one/scattered_form_disabled",
+            "resource": "origins-unknown-beings:scattered_one/form_toggle",
             "change": 1
         }
     },

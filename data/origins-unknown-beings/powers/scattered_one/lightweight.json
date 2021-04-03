@@ -15,14 +15,14 @@
         },
         {
             "effect": "minecraft:speed",
-            "amplifier": 2,
+            "amplifier": 1,
             "is_ambient": false,
             "show_particles": false,
             "show_icon": false
         },
         {
             "effect": "minecraft:slow_falling",
-            "amplifier": 1,
+            "amplifier": 0,
             "is_ambient": false,
             "show_particles": false,
             "show_icon": false
@@ -30,7 +30,7 @@
     ],
     "condition": {
         "type": "origins:resource",
-        "resource": "origins-unknown-beings:scattered_one/scattered_form_disabled",
+        "resource": "origins-unknown-beings:scattered_one/form_toggle",
         "comparison": "==",
         "compare_to": 0
     }
