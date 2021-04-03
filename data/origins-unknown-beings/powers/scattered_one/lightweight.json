@@ -1,0 +1,37 @@
+{
+    "name": "Lightweight",
+    "description": "While in your Scattered form, you move faster, jump higher and fall slower.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 2,
+    "duration_per_stack": 10,
+    "effects": [
+        {
+            "effect": "minecraft:jump_boost",
+            "amplifier": 1,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:speed",
+            "amplifier": 2,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:slow_falling",
+            "amplifier": 1,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": true
+        }
+    ],
+    "condition": {
+        "type": "origins:resource",
+        "resource": "origins-unknown-beings:scattered_one/scattered_form_disabled",
+        "comparison": "==",
+        "compare_to": 0
+    }
+}

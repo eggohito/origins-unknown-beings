@@ -90,7 +90,7 @@ Your curiosity about your past makes it impossible for you to sleep
 <ul>
 <details>
 <summary>
-<b>Warper (W.I.P)</b>
+<b>Warper</b>
 </summary>
 Warpers are an alien race that have evolved over the millenia to displace their particles and reform them in another location.
 <br>
@@ -138,4 +138,5 @@ Your particles will set on fire if you teleport while in (or into) sunlight.
 
 ## Credits:
 * `Eric Smart#9785` - for the ideas
-* MinecraftPhi - for the `phi.modifyinv` module
+* [K-Bai](https://github.com/K-Bai) - for the [`MRCD`](https://github.com/K-bai/Minecraft-Ray-Collision-Detector) module
+* [MinecraftPhi](https://github.com/MinecraftPhi) - for the [`phi.modifyinv`](https://github.com/MinecraftPhi/MinecraftPhi-modules/tree/master/phi.modifyinv/src/datapack) module

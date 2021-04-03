@@ -16,7 +16,7 @@
         },
         "condition": {
             "type": "origins:predicate",
-            "predicate": "origins-unknown-beings:dimension/overworld"
+            "predicate": "origins-unknown-beings:location_check/dimension/overworld"
         }
     },
     "the_nether": {
@@ -33,7 +33,7 @@
         },
         "condition": {
             "type": "origins:predicate",
-            "predicate": "origins-unknown-beings:dimension/the_nether"
+            "predicate": "origins-unknown-beings:location_check/dimension/the_nether"
         }
     },
     "the_end": {
@@ -50,7 +50,7 @@
         },
         "condition": {
             "type": "origins:predicate",
-            "predicate": "origins-unknown-beings:dimension/the_end"
+            "predicate": "origins-unknown-beings:location_check/dimension/the_end"
         }
     }
 }

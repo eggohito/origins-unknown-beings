@@ -1,0 +1,17 @@
+{
+    "icon": "minecraft:popped_chorus_fruit",
+    "impact": 3,
+    "order": 7,
+    "powers": [
+        "origins-unknown-beings:scattered_one/knowledge_of_the_dark_arts",
+        "origins-unknown-beings:scattered_one/lightweight",
+        "origins-unknown-beings:scattered_one/particle_condensing",
+        "origins-unknown-beings:scattered_one/physical_instability",
+        "origins-unknown-beings:scattered_one/scattered_form",
+        "origins-unknown-beings:scattered_one/suffocation",
+        "origins-unknown-beings:scattered_one/unknown_upbringing",
+        "origins-unknown-beings:scattered_one/void_dissolution"
+    ],
+    "name": "Scattered Ones",
+    "description": "The Scattered Ones are beings of unknown origin, they are clouds of purple particles, their very atoms in cluster, acting as pocket realms where they store their items."
+}

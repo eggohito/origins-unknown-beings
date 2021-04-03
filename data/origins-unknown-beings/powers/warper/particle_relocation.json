@@ -1,0 +1,41 @@
+{
+    "name": "Particle Relocation",
+    "description": "Upon pressing the primary ability key, you poof into a cloud of purple particles and reappear where you were looking.",
+    "type": "origins:multiple",
+    "test": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function origins-unknown-beings:warper/particle_relocation/cast"
+        },
+        "cooldown": 100,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 9
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[predicate = origins-unknown-beings:entity_properties/equipment/mainhand/td_reloc_requirements]",
+                    "comparison": "==",
+                    "compare_to": 1,
+                    "inverted": true
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:warper/displacement_bar",
+                    "comparison": ">=",
+                    "compare_to": 20,
+                    "inverted": true
+                }
+            ]
+        }
+    }
+}

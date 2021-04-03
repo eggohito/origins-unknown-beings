@@ -23,7 +23,9 @@
     },
     "cooldown": 400,
     "hud_render": {
-        "should_render": true
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 9
     },
     "key": {
         "key": "key.origins.primary_active",
@@ -39,7 +41,7 @@
             },
             {
                 "type": "origins:command",
-                "command": "execute if entity @s[predicate=origins-unknown-beings:gatekeeper/gateway_materials]",
+                "command": "execute if entity @s[predicate=origins-unknown-beings:entity_properties/equipment/hands/gateway_materials]",
                 "comparison": "==",
                 "compare_to": 1
             }
