@@ -16,6 +16,12 @@ scoreboard objectives add o-u-b.GK dummy
 
 scoreboard objectives add o-u-b.SO dummy
 
+scoreboard objectives add o-u-b.SO.s dummy
+
+scoreboard objectives add o-u-b.SO.pi dummy
+
+scoreboard objectives add o-u-b.SO.vd dummy
+
 scoreboard objectives add o-u-b.WP dummy
 
 scoreboard objectives add o-u-b.WP.d dummy
@@ -26,7 +32,7 @@ tellraw @a[tag = o-u-b.debug] {"text": "[+ Loaded \"Unknown Beings (Origins)\"]"
 
 
 # Set variables/constants
-execute unless score #load o-u-b.main = #load o-u-b.main run function origins-unknown-beings:.cfg/warper
+execute unless score #load o-u-b.main = #load o-u-b.main run function #origins-unknown-beings:default_cfg
 
 function origins-unknown-beings:warper/particle_relocation/distance/calculate_max
 

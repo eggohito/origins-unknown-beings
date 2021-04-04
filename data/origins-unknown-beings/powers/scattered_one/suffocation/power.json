@@ -1,0 +1,182 @@
+{
+    "name": "Suffocation",
+    "description": "If you press your secondary ability key while in your Scattered form, your cloud grows in size temporarily, anything within this expanded cloud is poisoned.",
+    "type": "origins:multiple",
+    "set_resource_on_pick": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players operation @s o-u-b.SO.s = %suffocation o-u-b.SO"
+        },
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players reset @s o-u-b.SO.s"
+        }
+    },
+    "sync_resource_to_score": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "resource operation @s origins-unknown-beings:scattered_one/suffocation/resource = @s o-u-b.SO.s"
+        },
+        "interval": 1
+    },
+    "enabled": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "enable_this": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+                        "change": -69420
+                    },
+                    "else_action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+                        "change": 1
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+                                "comparison": "==",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:command",
+                                "command": "execute unless score @s o-u-b.SO.s = %suffocation o-u-b.SO",
+                                "comparison": "==",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+                        "change": -69420
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "origins-unknown-beings:scattered_one/form_toggle",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "wither_cloud": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s add self"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle dust 0.45 0 0.7 1 ~ ~ ~ 1 1 1 0.001 32 normal @a"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[tag = !self, distance = ..3] wither 2 0 false"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove self"
+                }
+            ]
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "decrement_resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "origins-unknown-beings:scattered_one/suffocation/resource",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            "if_action": {
+                "type": "origins:execute_command",
+                "command": "scoreboard players remove @s o-u-b.SO.s 1"
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+                "change": -1
+            }
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "increment_resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players add @s o-u-b.SO.s 1"
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:command",
+                    "command": "execute unless score @s o-u-b.SO.s = %suffocation o-u-b.SO",
+                    "comparison": "==",
+                    "compare_to": 1
+                }
+            ]
+        }
+    }
+}

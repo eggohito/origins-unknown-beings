@@ -1,0 +1,116 @@
+{
+    "name": "Void Dissolution",
+    "description": "When in The End or high altitudes for too long, you will begin to wither away as your cells struggle to stay within their cloud.",
+    "type": "origins:multiple",
+    "set_resource_on_pick": {
+        "type": "origins:action_on_callback",
+        "entity_action_added" :{
+            "type": "origins:execute_command",
+            "command": "scoreboard players operation @s o-u-b.SO.vd = %void_dissolution o-u-b.SO"
+        },
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players reset @s o-u-b.SO.vd"
+        }
+    },
+    "sync_resource_to_score": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "resource operation @s origins-unknown-beings:scattered_one/void_dissolution/resource = @s o-u-b.SO.vd"
+        },
+        "interval": 1
+    },
+    "decrement_resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players remove @s o-u-b.SO.vd 1"
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:command",
+                            "command": "execute if entity @s[predicate = origins-unknown-beings:location_check/dimension/the_end]",
+                            "comparison": "==",
+                            "compare_to": 1
+                        },
+                        {
+                            "type": "origins:command",
+                            "command": "execute if entity @s[y = 127, dy = 200]",
+                            "comparison": "==",
+                            "compare_to": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:scattered_one/form_toggle",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "increment_resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players add @s o-u-b.SO.vd 1"
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:command",
+                            "command": "execute if entity @s[predicate = origins-unknown-beings:location_check/dimension/the_end]",
+                            "comparison": "==",
+                            "compare_to": 1
+                        },
+                        {
+                            "type": "origins:command",
+                            "command": "execute if entity @s[y = 127, dy = 200]",
+                            "comparison": "==",
+                            "compare_to": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:scattered_one/form_toggle",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ],
+            "inverted": true
+        }
+    },
+    "wither_effect": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 2,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:wither",
+            "amplifier": 0,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "origins-unknown-beings:scattered_one/void_dissolution/resource",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    }
+}
