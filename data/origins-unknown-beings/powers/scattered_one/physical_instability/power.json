@@ -1,0 +1,104 @@
+{
+    "name": "Physical Instability",
+    "description": "Your solid form will eventually begin to decay and wither, as your cells struggle to stay within their cloud.",
+    "type": "origins:multiple",
+    "set_resource_on_pick": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players operation @s o-u-b.SO.pi = %physical_instability o-u-b.SO"
+        },
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players reset @s o-u-b.SO.pi"
+        }
+    },
+    "sync_resource_to_score": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "resource operation @s origins-unknown-beings:scattered_one/physical_instability/resource = @s o-u-b.SO.pi"
+        },
+        "interval": 1
+    },
+    "decrement_resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players remove @s o-u-b.SO.pi 1"
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:scattered_one/form_toggle",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:scattered_one/physical_instability/resource",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "increment_resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players add @s o-u-b.SO.pi 1"
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:scattered_one/form_toggle",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:command",
+                    "command": "execute unless score @s o-u-b.SO.pi = %physical_instability o-u-b.SO",
+                    "comparison": "==",
+                    "compare_to": 1
+                }
+            ]
+        }
+    },
+    "wither_effect": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 2,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:wither",
+            "amplifier": 0,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:scattered_one/form_toggle",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins-unknown-beings:scattered_one/physical_instability/resource",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    }
+}

@@ -2,7 +2,7 @@
 #
 #   > Set variables/constants
 #
-#@within function origins-unknown-beings:load
+#@within tag/function origins-unknown-beings:default_cfg
 
 
 scoreboard players set %blocks_per_tick o-u-b.WP 8

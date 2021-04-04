@@ -33,7 +33,7 @@
     },
     "condition": {
         "type": "origins:resource",
-        "resource": "origins-unknown-beings:scattered_one/suffocation_enabled",
+        "resource": "origins-unknown-beings:scattered_one/suffocation/power_enabled",
         "comparison": "==",
         "compare_to": 0
     }

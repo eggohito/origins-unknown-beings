@@ -2,29 +2,30 @@
     "name": "Void Dissolution",
     "description": "When in The End or high altitudes for too long, you will begin to wither away as your cells struggle to stay within their cloud.",
     "type": "origins:multiple",
-    "timer": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 20,
-        "start_value": 20,
-        "hud_render": {
-            "should_render": true,
-            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
-            "bar_index": 18,
-            "condition": {
-                "type": "origins:resource",
-                "resource": "origins-unknown-beings:scattered_one/void_dissolution_timer",
-                "comparison": "<",
-                "compare_to": 20
-            }
+    "set_resource_on_pick": {
+        "type": "origins:action_on_callback",
+        "entity_action_added" :{
+            "type": "origins:execute_command",
+            "command": "scoreboard players operation @s o-u-b.SO.vd = %void_dissolution o-u-b.SO"
+        },
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players reset @s o-u-b.SO.vd"
         }
+    },
+    "sync_resource_to_score": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "resource operation @s origins-unknown-beings:scattered_one/void_dissolution/resource = @s o-u-b.SO.vd"
+        },
+        "interval": 1
     },
     "decrement_resource": {
         "type": "origins:action_over_time",
         "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "origins-unknown-beings:scattered_one/void_dissolution_timer",
-            "change": -1
+            "type": "origins:execute_command",
+            "command": "scoreboard players remove @s o-u-b.SO.vd 1"
         },
         "interval": 20,
         "condition": {
@@ -59,9 +60,8 @@
     "increment_resource": {
         "type": "origins:action_over_time",
         "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "origins-unknown-beings:scattered_one/void_dissolution_timer",
-            "change": 1
+            "type": "origins:execute_command",
+            "command": "scoreboard players add @s o-u-b.SO.vd 1"
         },
         "interval": 20,
         "condition": {
@@ -108,7 +108,7 @@
         },
         "condition": {
             "type": "origins:resource",
-            "resource": "origins-unknown-beings:scattered_one/void_dissolution_timer",
+            "resource": "origins-unknown-beings:scattered_one/void_dissolution/resource",
             "comparison": "==",
             "compare_to": 0
         }
